@@ -7,7 +7,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
 <body>
-  <button id="button01">テキストを流す</button>
+  <button id="button01">こうたに投げ銭</button>
 
 <script>
 const button01 = document.getElementById("button01");
@@ -23,7 +23,7 @@ async function createText() {
   div_text.style.left = (document.documentElement.clientWidth) + 'px'; //初期状態の横方向の位置は画面の右端に設定
   var random = Math.round( Math.random()*document.documentElement.clientHeight );
   div_text.style.top = random + 'px';  //初期状態の縦方向の位置は画面の上端から下端の間に設定（ランダムな配置に）
-  div_text.appendChild(document.createTextNode('移動するテキスト'+count)); //画面上に表示されるテキストを設定
+  div_text.appendChild(document.createTextNode('こうたは木曜日も部活に行くことができる！！')); //画面上に表示されるテキストを設定
   document.body.appendChild(div_text); //body直下へ挿入
 
    //ライブラリを用いたテキスト移動のアニメーション： durationはアニメーションの時間、
